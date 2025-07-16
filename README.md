@@ -41,11 +41,14 @@ Application runs at:
 http://localhost:8080
 
 #Access H2 Console
+
 H2 Console is available at:
 http://localhost:8080/h2-console
 
 JDBC URL: jdbc:h2:mem:testdb
+
 Username: sa
+
 Password: 
 
 📦 API Endpoints
@@ -53,9 +56,13 @@ Password:
 Method	Endpoint	Description
 
 GET	/api/employees	Get all employees
+
 GET	/api/employees/{id}	Get employee by ID
+
 POST	/api/employees	Create a new employee
+
 PUT	/api/employees/{id}	Update existing employee
+
 DELETE	/api/employees/{id}	Delete an employee
 
 Sample JSON (POST/PUT)
@@ -65,8 +72,11 @@ json
 {
 
   "firstName": "Alice",
+  
   "lastName": "Smith",
+  
   "email": "alice.smith@example.com"
+  
 }
 
 🧪 Testing
