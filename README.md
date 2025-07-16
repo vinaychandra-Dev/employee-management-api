@@ -33,8 +33,10 @@ git clone https://github.com/your-username/employee-crud-spring.git
 cd employee-crud-spring
 ---
 #Build and Run
+
 mvn clean install
 mvn spring-boot:run
+
 Application runs at:
 http://localhost:8080
 
@@ -44,10 +46,12 @@ http://localhost:8080/h2-console
 
 JDBC URL: jdbc:h2:mem:testdb
 Username: sa
-Password: (leave blank)
+Password: 
 
-#📦 API Endpoints
+📦 API Endpoints
+
 Method	Endpoint	Description
+
 GET	/api/employees	Get all employees
 GET	/api/employees/{id}	Get employee by ID
 POST	/api/employees	Create a new employee
@@ -57,15 +61,15 @@ DELETE	/api/employees/{id}	Delete an employee
 Sample JSON (POST/PUT)
 
 json
-Copy
-Edit
+
 {
+
   "firstName": "Alice",
   "lastName": "Smith",
   "email": "alice.smith@example.com"
 }
 
-#🧪 Testing
+🧪 Testing
 
 Use Postman or curl to test endpoints.
 
@@ -73,16 +77,24 @@ Example:
 
 curl -X GET http://localhost:8080/api/employee
 
-#⚙️ Configuration - application.properties
+⚙️ Configuration - application.properties
 
 # H2 Configuration
+
 spring.datasource.url=jdbc:h2:mem:testdb
+
 spring.datasource.driverClassName=org.h2.Driver
+
 spring.datasource.username=sa
+
 spring.datasource.password=
 
 # JPA Configuration
+
 spring.jpa.database-platform=org.hibernate.dialect.H2Dialect
+
 spring.jpa.hibernate.ddl-auto=update
+
 spring.h2.console.enabled=true
+
 spring.h2.console.path=/h2-console
