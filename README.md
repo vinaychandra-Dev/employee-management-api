@@ -38,7 +38,7 @@ mvn spring-boot:run
 Application runs at:
 http://localhost:8080
 
-Access H2 Console
+#Access H2 Console
 H2 Console is available at:
 http://localhost:8080/h2-console
 
@@ -46,7 +46,7 @@ JDBC URL: jdbc:h2:mem:testdb
 Username: sa
 Password: (leave blank)
 
-📦 API Endpoints
+#📦 API Endpoints
 Method	Endpoint	Description
 GET	/api/employees	Get all employees
 GET	/api/employees/{id}	Get employee by ID
@@ -55,6 +55,7 @@ PUT	/api/employees/{id}	Update existing employee
 DELETE	/api/employees/{id}	Delete an employee
 
 Sample JSON (POST/PUT)
+
 json
 Copy
 Edit
@@ -63,19 +64,17 @@ Edit
   "lastName": "Smith",
   "email": "alice.smith@example.com"
 }
-🧪 Testing
+
+#🧪 Testing
+
 Use Postman or curl to test endpoints.
 
 Example:
 
-bash
-Copy
-Edit
-curl -X GET http://localhost:8080/api/employees
-⚙️ Configuration - application.properties
-properties
-Copy
-Edit
+curl -X GET http://localhost:8080/api/employee
+
+#⚙️ Configuration - application.properties
+
 # H2 Configuration
 spring.datasource.url=jdbc:h2:mem:testdb
 spring.datasource.driverClassName=org.h2.Driver
