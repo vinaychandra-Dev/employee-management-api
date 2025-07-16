@@ -29,8 +29,8 @@ A simple RESTful API for managing employees using **Spring Boot**, **Maven**, an
 --
 ### Clone the Repository
 
-git clone https://github.com/your-username/employee-crud-spring.git
-cd employee-crud-spring
+git clone https://github.com/vinaychandra-Dev/employee-management-api.git
+cd employee-management-api
 ---
 #Build and Run
 
